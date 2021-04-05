@@ -1,0 +1,38 @@
+.wrapper {
+  width: 400px;
+  box-shadow: 0 0 5px rgba(black, 0.1);
+  padding: 48px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid $btn-color;
+  border-radius: 10px;
+
+  section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 12px;
+    margin: 6px 0;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  fieldset {
+    width: 100%;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 48px;
+  }
+}

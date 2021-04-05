@@ -1,0 +1,12 @@
+.input {
+  height: 40px;
+  width: calc(100% - 24px);
+  border: none;
+  border: 2px solid $light-grey;
+  border-radius: 5px;
+  padding: 0 12px;
+
+  &:hover, &:active, &:focus {
+    border-color: $btn-color;
+  }
+}

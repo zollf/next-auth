@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Router from 'next/router';
 import { signIn } from 'next-auth/client';
+import { Button, Input } from '@/components';
 
 const SignIn = () => {
   const [name, setName] = useState('');
@@ -16,19 +17,17 @@ const SignIn = () => {
   };
 
   return (
-    <div>
+    <fieldset>
       <section>
         <label htmlFor="username">Username</label>
-        <input type="text" name="username" value={name} onChange={(e) => setName(e.target.value)} />
+        <Input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
       </section>
       <section>
         <label htmlFor="password">Password</label>
-        <input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <Input type="password" name="password" value={password} onChange={(e) => setPassword(e.target.value)} />
       </section>
-      <button type="button" onClick={onSubmit}>
-        Submit
-      </button>
-    </div>
+      <Button onClick={onSubmit}>Submit</Button>
+    </fieldset>
   );
 };
 

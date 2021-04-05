@@ -1,0 +1,28 @@
+.button {
+  height: 60px;
+  width: 100%;
+  background: $btn-color;
+  max-width: 200px;
+  border: none;
+  border: 2px solid white;
+  box-shadow: 0 0 5px rgba(black, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  color: white;
+  transition: 0.2s all ease;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $btn-color;
+    background: white;
+    color: $btn-color;
+  }
+}
+
+.anchor {
+  max-width: 200px;
+  min-width: 200px;
+  text-decoration: none;
+}
