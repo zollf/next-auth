@@ -1,0 +1,93 @@
+{
+  "name": "dylanio",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.tsx",
+  "scripts": {
+    "test": "jest",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint:css": "stylelint src/**/*.scss ",
+    "lint:ts": "eslint . --ext .ts,.tsx",
+    "pretty-quick": "pretty-quick --staged"
+  },
+  "pre-commit": [
+  ],
+  "dependencies": {
+    "@babel/core": "7.7.7",
+    "@babel/helper-define-map": "^7.12.13",
+    "@babel/helper-regex": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/preset-env": "^7.13.5",
+    "@next/bundle-analyzer": "^9.5.2",
+    "classcat": "^4.1.0",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^9.5.5",
+    "next-auth": "^3.13.3",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.4.1",
+    "node-sass": "^4.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-use": "^15.3.4",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.7",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^24.9.0",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/next-auth": "^3.13.0",
+    "@types/node": "^14.10.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "babel-jest": "^26.6.3",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "fetch-mock": "^9.10.5",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-transform-stub": "^2.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "react-multi-carousel": "^2.5.5",
+    "stylelint": "^13.2.1",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-scss": "^3.14.2",
+    "stylelint-webpack-plugin": "^2",
+    "ts-jest": "^26.3.0",
+    "webpack": "4.42.0"
+  },
+  "jest-junit": {
+    "outputDirectory": "./node_modules/.cache/test-reports"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "stylelint": {
+    "extends": "./stylelint.config.js"
+  }
+}

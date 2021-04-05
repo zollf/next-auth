@@ -1,0 +1,10 @@
+/.vscode
+/config
+/coverage
+/next.config.js
+/src/.next
+/test/jsdom.ts
+/vendor
+/web
+
+tsconfig.json
