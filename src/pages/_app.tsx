@@ -1,6 +1,8 @@
 import React from 'react';
 import { Provider } from 'next-auth/client';
 
+import '@/styles/main.css';
+
 interface Props {
   Component: any;
   pageProps: any;

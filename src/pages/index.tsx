@@ -1,5 +1,4 @@
 import React from 'react';
-import { SignIn } from '@/components';
 import { useSession, signOut } from 'next-auth/client';
 
 const Index = () => {
@@ -7,8 +6,12 @@ const Index = () => {
   return (
     <div>
       {session?.user ? <p>Sign in as {session?.user.name}</p> : <p>Not Signed In</p>}
-      <SignIn />
-      <button onClick={() => signOut()}>Logout</button>
+      <section>
+        <a href="/signIn">Sign In</a>
+        <a href="/signUp">Sign Up</a>
+        <a href="/api/users">View All Users</a>
+      </section>
+      {session?.user && <button onClick={() => signOut()}>Logout</button>}
     </div>
   );
 };

@@ -1,0 +1,9 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
