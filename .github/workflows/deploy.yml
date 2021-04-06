@@ -13,11 +13,11 @@ jobs:
         name: Run Test
         with:
           node-version: '12.x'
-        run: yarn
-        run: yarn test
-        run: yarn lint:ts
-        run: yarn lint:css
-        run: yarn build
+      - run: yarn
+      - run: yarn test
+      - run: yarn lint:ts
+      - run: yarn lint:css
+      - run: yarn build
   deploy:
     runs-on: ubuntu-latest
     steps:
