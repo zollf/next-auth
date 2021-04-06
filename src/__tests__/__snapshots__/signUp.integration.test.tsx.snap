@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignUp /> matches its snapshot 1`] = `
+<SignUp>
+  <Wrapper>
+    <div
+      className="wrapper"
+    >
+      <h1>
+        Sign Up
+      </h1>
+      <SignUp>
+        <fieldset>
+          <section>
+            <label
+              htmlFor="username"
+            >
+              Username
+            </label>
+            <Input
+              name="name"
+              onChange={[Function]}
+              type="text"
+              value=""
+            >
+              <input
+                className="input"
+                name="name"
+                onChange={[Function]}
+                type="text"
+                value=""
+              />
+            </Input>
+          </section>
+          <section>
+            <label
+              htmlFor="password"
+            >
+              Password
+            </label>
+            <Input
+              name="password"
+              onChange={[Function]}
+              type="password"
+              value=""
+            >
+              <input
+                className="input"
+                name="password"
+                onChange={[Function]}
+                type="password"
+                value=""
+              />
+            </Input>
+          </section>
+          <Button
+            onClick={[Function]}
+          >
+            <button
+              className="button"
+              onClick={[Function]}
+              type="button"
+            >
+              Submit
+            </button>
+          </Button>
+        </fieldset>
+      </SignUp>
+    </div>
+  </Wrapper>
+</SignUp>
+`;

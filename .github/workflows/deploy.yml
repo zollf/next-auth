@@ -9,7 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        name: Run Test
+        with:
+          node-version: '12.x'
+        run: yarn
+        run: yarn test
+        run: yarn lint:ts
+        run: yarn lint:css
+        run: yarn build
       - uses: amondnet/vercel-action@v19
+        name: Deploy to Vercel
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.ORG_ID }}

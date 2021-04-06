@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Index /> Logged in matches its snapshot 1`] = `
+<Index>
+  <Wrapper
+    data-logged-in={true}
+  >
+    <div
+      className="wrapper"
+    >
+      <h1>
+        Next Auth Login
+      </h1>
+      <p>
+        Sign in as 
+        Delta
+      </p>
+      <section>
+        <Button
+          href="/signIn"
+        >
+          <a
+            className="anchor"
+            href="/signIn"
+          >
+            <div
+              className="button"
+            >
+              Sign In
+            </div>
+          </a>
+        </Button>
+        <Button
+          href="/signUp"
+        >
+          <a
+            className="anchor"
+            href="/signUp"
+          >
+            <div
+              className="button"
+            >
+              Sign Up
+            </div>
+          </a>
+        </Button>
+        <Button
+          href="/api/users"
+        >
+          <a
+            className="anchor"
+            href="/api/users"
+          >
+            <div
+              className="button"
+            >
+              View All Users
+            </div>
+          </a>
+        </Button>
+      </section>
+      <Button
+        data-test-id="logout"
+        onClick={[Function]}
+      >
+        <button
+          className="button"
+          onClick={[Function]}
+          type="button"
+        >
+          Logout
+        </button>
+      </Button>
+    </div>
+  </Wrapper>
+</Index>
+`;
+
+exports[`<Index /> matches its snapshot 1`] = `
+<Index>
+  <Wrapper
+    data-logged-in={false}
+  >
+    <div
+      className="wrapper"
+    >
+      <h1>
+        Next Auth Login
+      </h1>
+      <p>
+        Not Signed In
+      </p>
+      <section>
+        <Button
+          href="/signIn"
+        >
+          <a
+            className="anchor"
+            href="/signIn"
+          >
+            <div
+              className="button"
+            >
+              Sign In
+            </div>
+          </a>
+        </Button>
+        <Button
+          href="/signUp"
+        >
+          <a
+            className="anchor"
+            href="/signUp"
+          >
+            <div
+              className="button"
+            >
+              Sign Up
+            </div>
+          </a>
+        </Button>
+        <Button
+          href="/api/users"
+        >
+          <a
+            className="anchor"
+            href="/api/users"
+          >
+            <div
+              className="button"
+            >
+              View All Users
+            </div>
+          </a>
+        </Button>
+      </section>
+    </div>
+  </Wrapper>
+</Index>
+`;
