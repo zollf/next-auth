@@ -3426,11 +3426,6 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classcat@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/classcat/-/classcat-4.1.0.tgz#e8fd8623e5625187b58adf49bb669a13b6c520f4"
-  integrity sha512-RA8O5oCi1I1CF6rR4cRBROh8MtZzM4w7xKLm0jd+S6UN2G4FIto+9DVOeFc46JEZFN5PVe/EZWLQO1VU/AUH4A==
-
 classnames@2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
@@ -8892,11 +8887,6 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
-
-react-multi-carousel@^2.5.5:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.6.2.tgz#c78d38fbfab704394a72f26ffa161b8963138a1f"
-  integrity sha512-qSrupBGazqYS/LVQAUCWiEAPhCrO0QufP5PcpDCA6Klig3egdNMwIdkkoU6Xlm9zEQ/hFp57bNr7F4sd0ANLyA==
 
 react-refresh@0.8.3:
   version "0.8.3"

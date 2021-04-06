@@ -12,7 +12,9 @@
     "lint:ts": "eslint . --ext .ts,.tsx",
     "pretty-quick": "pretty-quick --staged"
   },
-  "pre-commit": [],
+  "pre-commit": [
+    "test"
+  ],
   "dependencies": {
     "@babel/core": "7.7.7",
     "@babel/helper-define-map": "^7.12.13",
@@ -21,7 +23,6 @@
     "@babel/plugin-proposal-decorators": "^7.4.4",
     "@babel/preset-env": "^7.13.5",
     "@next/bundle-analyzer": "^9.5.2",
-    "classcat": "^4.1.0",
     "dotenv": "^8.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.5",
@@ -33,7 +34,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-use": "^15.3.4",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.2",
+    "webpack": "4.42.0"
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^1.2.3",
@@ -63,13 +65,11 @@
     "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "pretty-quick": "^3.1.0",
-    "react-multi-carousel": "^2.5.5",
     "stylelint": "^13.2.1",
     "stylelint-config-standard": "20.0.0",
     "stylelint-scss": "^3.14.2",
     "stylelint-webpack-plugin": "^2",
-    "ts-jest": "^26.3.0",
-    "webpack": "4.42.0"
+    "ts-jest": "^26.3.0"
   },
   "jest-junit": {
     "outputDirectory": "./node_modules/.cache/test-reports"
