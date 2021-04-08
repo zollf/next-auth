@@ -6,10 +6,6 @@ import SignIn from '@/pages/signIn';
 
 const component = <SignIn />;
 
-jest.mock('next/router', () => ({
-  useRouter: () => ({ query: { error: undefined } }),
-}));
-
 describe('<SignIn />', () => {
   let wrapper!: ReactWrapper;
   beforeEach(() => {

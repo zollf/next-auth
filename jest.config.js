@@ -6,27 +6,16 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
     'src/**/*.{ts,tsx}',
-    'src/components/Cards/*.tsx',
-    '!src/**/*.d.ts', // Ignore declaration files
-    '!src/test/**/*', // Ignore test helpers/config
-    '!src/typings/**/*', // Ignore typings
-    // Ignore config files
-    '!src/config/**/*',
-    '!src/pages/_document.tsx',
-    '!src/hooks/**', //TODO
-    '!src/lib/**',
-    '!src/util/**',
+    '!src/pages/api/**/*.{ts,tsx}',
     '!src/pages/_app.tsx',
-    '!src/pages/api/**',
-    '!src/pages/admin/**',
-    '!src/components/Admin/**/*',
+    '!src/util/**/*.{ts,tsx}',
   ],
   coverageThreshold: {
     global: {
-      branches: 0,
-      functions: 0,
-      lines: 0,
-      statements: 0,
+      branches: 90,
+      functions: 90,
+      lines: 90,
+      statements: 90,
     },
   },
   testPathIgnorePatterns: ['/node_modules/', '/.next/'],
@@ -37,13 +26,13 @@ module.exports = {
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
   moduleNameMapper: {
-    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@/(.*)$': ['<rootDir>/src/$1', '<rootDir>/$1'],
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
     '\\.(css)': 'identity-obj-proxy',
   },
   setupFiles: ['<rootDir>/test/config.ts'],
   // additional prop from a github issue: https://github.com/zeit/next.js/issues/8663
-  preset: '@shelf/jest-mongodb',
+  preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom-sixteen',
   globals: {
     // we must specify a custom tsconfig for tests because we need the typescript transform

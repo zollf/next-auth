@@ -10,7 +10,9 @@ exports[`<SignIn /> matches its snapshot 1`] = `
         Sign In
       </h1>
       <SignIn>
-        <fieldset>
+        <fieldset
+          data-test-error={false}
+        >
           <section>
             <label
               htmlFor="username"

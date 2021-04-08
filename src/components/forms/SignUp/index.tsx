@@ -5,6 +5,7 @@ import { Button, Input } from '@/components';
 const SignUp = () => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
 
   const onSubmit = async () => {
     if (name && password) {
@@ -12,20 +13,24 @@ const SignUp = () => {
         const response = await fetch('/api/signUp', {
           method: 'POST',
           body: JSON.stringify({ name, password }),
-        });
-        if (response) {
+        }).then((res) => res.json());
+        if (!response.error) {
+          setError(false);
           Router.push('/');
         } else {
-          Router.push(`/signUp?error='InternalError'`);
+          setError(true);
         }
       } catch (e) {
-        Router.push(`/signUp?error='InternalError'`);
+        setError(true);
       }
+    } else {
+      setError(true);
     }
   };
 
   return (
-    <fieldset>
+    <fieldset data-test-error={error}>
+      {error && <p>An Error has occurred</p>}
       <section>
         <label htmlFor="username">Username</label>
         <Input value={name} name="name" type="text" onChange={(e) => setName(e.target.value)} />

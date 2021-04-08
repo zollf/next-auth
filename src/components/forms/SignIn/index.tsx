@@ -6,18 +6,21 @@ import { Button, Input } from '@/components';
 const SignIn = () => {
   const [name, setName] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState(false);
   const onSubmit = () => {
     signIn('credentials', { name, password, redirect: false }).then((res) => {
       if (res.error) {
-        Router.push(`/signIn?error=${res.error}`);
+        setError(true);
       } else {
         Router.push('/');
+        setError(false);
       }
     });
   };
 
   return (
-    <fieldset>
+    <fieldset data-test-error={error}>
+      {error && <p data-test-id="error">Credentials are incorrect</p>}
       <section>
         <label htmlFor="username">Username</label>
         <Input type="text" name="name" value={name} onChange={(e) => setName(e.target.value)} />
