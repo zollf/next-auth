@@ -16,7 +16,8 @@ docker-compose up
 ```
 
 
-##Custom Auth
+## Custom Auth
+
 Simple Custom Authorize function
 ```tsx
 import NextAuth, { User } from 'next-auth';
